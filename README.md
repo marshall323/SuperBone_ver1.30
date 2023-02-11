@@ -12,7 +12,7 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
       │       ├── img_src
       │              ├── mechanical_src
       │              ├── pattern_src
-      │              └── ......other directory you need
+      │              └── ......other directories you need
       │       ├── lammps_needfile        
       │       ├── SuperBone_main
       │              ├── DCMsearch
@@ -26,9 +26,32 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
       │       ├── feature_output.csv
       │       ├── mechanic_output.csv
       │       ├── search_output.csv
-      │       └── ......other .bat and .sh file to execute program  
+      │       └── ......other .bat and .sh files to execute program  
       └── dcm_output
       │       ├── mechanical_feature
       │       └── pattern_feature        
 ```
+
+# Image Feature and Mechnical Feature
+```
+├── All image features have their corresponding average and standard deviation.
+      ├── Porosity
+      ├── Bone Angle
+      ├── Thinkness
+      ├── Curl
+      ├── Area
+      ├── Convex Area  
+      ├── Ratio of Area to Perimeter
+      ├── Compactness
+      ├── Circularity 
+      ├── Width to Length
+      ├── Centroid_X
+      └── Centroid_Y             
+```
+```
+├── mechnical features
+      ├── Max stress
+      └── Strain at max stress            
+```
+
 # Update Log
