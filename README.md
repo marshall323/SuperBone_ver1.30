@@ -67,7 +67,8 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
    Please choose a unit (si or real)
    Please choose a simulation (LJ or LSM)
    ```
-   第一行為模擬時使用之單位，可參考LAMMPS的官方文件，目前為si
+   第一行為模擬時使用之單位，可參考 LAMMPS 的官方文件，目前為 si
+   
    第二行為模擬之模型，目前為LSM
 
    自行輸入si、LSM 即可 (可不區分大小寫)
