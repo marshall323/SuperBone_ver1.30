@@ -22,7 +22,7 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
       │              ├── LAMMPStoDATA
       │              └── ......other .py file
       │       ├── test
-      │       ├── test_tool
+      │       ├── test_tool (分析小工具，陸續更新)
       │       ├── feature_output.csv
       │       ├── mechanic_output.csv
       │       ├── search_output.csv
@@ -55,3 +55,23 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
 ```
 
 # Update Log
+
+# How to Use SuperBone_MECH
+
+1) 執行模擬之圖片檔可放置於 img_src 的 mechanical_src 中，可依據需求存放多個 mechanical_src 資料夾，如 mechanical_src_1、mechanical_src_2 等...
+   以便在同個資料夾同時進行多個核心運算
+
+2) 目前執行 SuperBone_MECH.bat 會出現以下兩行指令
+
+   ```bash
+   Please choose a unit (si or real)
+   Please choose a simulation (LJ or LSM)
+   ```
+   第一行為模擬時使用之單位，可參考LAMMPS的官方文件，目前為si
+   第二行為模擬之模型，目前為LSM
+
+   自行輸入si、LSM 即可 (可不區分大小寫)
+
+3) 接著會跳出視窗要求點選圖片來源資料夾，即 img_src 的 mechanical_src
+
+4) 點擊繼續，模擬即開始進行
