@@ -29,10 +29,12 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
       │       └── ......other .bat and .sh files to execute program  
       └── dcm_output
       │       ├── mechanical_feature
+      │       ├── mechanical_dump
+      │       ├── mechanical_txt
       │       └── pattern_feature        
 ```
 
-# Image Feature and Mechnical Feature
+# Image Feature and Mechanical Feature
 ```
 ├── All image features have their corresponding average and standard deviation.
       ├── Porosity
@@ -49,12 +51,14 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
       └── Centroid_Y             
 ```
 ```
-├── mechnical features
+├── mechanical features
       ├── Max stress
       └── Strain at max stress            
 ```
 
 # Update Log
+
+2023-02-15) Update file hierarchy which can differentiate the file types. And rewrite the code for more mechanical purposes.
 
 # How to Use SuperBone_MECH
 
