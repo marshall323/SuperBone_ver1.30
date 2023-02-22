@@ -4,8 +4,8 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
 # Recommand File Hierarchy
 ```
 ├── your driver or directory
-      ├── dcm_zip
-      ├── dcm_src
+      ├── dcm_zip (optional)
+      ├── dcm_src (optional)
       ├── img_src_all
       ├── SuperBone_ver1.30
       │       ├── analyze_figure
@@ -59,21 +59,30 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
 # Update Log
 
 2023-02-15) Update file hierarchy which can differentiate the file types. And rewrite the code for more mechanical purposes.
+
 2023-02-20) Add tool 'random_file_chooser.py' for a better way to move images from img_src_all to img_src.
 
 # How to Use SuperBone_TOOL
 
 1) 開啟 SuperBone_TOOL.bat，可選擇使用那些工具，目前需選擇 'random_file_chooser.py' 將所需圖片檔放入 img_src，以便分析
 
-2) 目前執行 SuperBone_TOOL.bat 會出現以下兩行指令
+2) 目前執行 random_file_chooser.py 會出現以下三行指令
 
    ```bash
-   Please choose a unit (si or real)
-   Please choose a simulation (LJ or LSM)
+   Please input number of files (greater than 40) :
+   Please input number of directories : 
+   Please input type of analysis (pattern or mechanic) :
+   
    ```
    第一行總共需要分析的圖片數量，目前為一萬張
    
    第二行為將總圖片數放入之資料夾數目，可依據需求輸入數量
+   
+   第三行為後續為圖像分析 (pattern) 或力學分析 (mechanic)，目前為圖像分析 (pattern)
+   
+3) 接著跳出視窗選取圖片來源，選 img_src_all
+
+4) 程式將開始平均隨機抽取未分析過的圖片，並放入 img_src 中
    
 # How to Use SuperBone_FEAT
 
@@ -92,8 +101,8 @@ A tool for converting DICOM files (especially for bones) to threshold images, as
 2) 目前執行 SuperBone_MECH.bat 會出現以下兩行指令
 
    ```bash
-   Please choose a unit (si or real)
-   Please choose a simulation (LJ or LSM)
+   Please choose a unit (si or real) :
+   Please choose a simulation (LJ or LSM) :
    ```
    第一行為模擬時使用之單位，可參考 LAMMPS 的官方文件，目前為 si
    
